@@ -118,6 +118,23 @@
     .social-card .s-name { font-weight: 600; font-size: 0.95rem; }
     .social-card .s-handle { font-size: 0.8rem; color: var(--muted); }
 
+    /* PROJECTS */
+    .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.6rem; transition: border-color 0.2s, transform 0.2s; }
+    .project-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+    .project-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.5rem; }
+    .project-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--white); }
+    .project-links { display: flex; gap: 0.6rem; }
+    .project-link { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; font-weight: 600; padding: 0.35rem 0.8rem; border-radius: 6px; text-decoration: none; transition: all 0.2s; }
+    .project-link.demo { background: var(--accent); color: var(--white); }
+    .project-link.demo:hover { background: #5a52e0; }
+    .project-link.code { background: var(--surface2); border: 1px solid var(--border); color: var(--text); }
+    .project-link.code:hover { border-color: var(--accent); color: var(--accent); }
+    .project-desc { color: var(--muted); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1rem; }
+    .project-features { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+    .feature-tag { font-size: 0.72rem; color: var(--muted); background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 0.2rem 0.55rem; }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; padding-top: 0.8rem; border-top: 1px solid var(--border); }
+    .tech-tag { font-size: 0.72rem; font-weight: 600; color: var(--accent); background: rgba(108,99,255,0.1); border: 1px solid rgba(108,99,255,0.25); border-radius: 4px; padding: 0.2rem 0.55rem; }
+
     /* FOOTER */
     footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
 
@@ -145,6 +162,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <button class="hamburger" onclick="toggleNav()" aria-label="Menu">
@@ -256,6 +274,43 @@
 </section>
 
 <!-- CONTACT -->
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">What I've Built</p>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="reveal">
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-title">🧮 Basic Calculator</div>
+          <div class="project-links">
+            <a href="https://huzaif-codesz.github.io/Basic-calculator/" target="_blank" class="project-link demo">🚀 Live Demo</a>
+            <a href="https://github.com/huzaif-codesz/Basic-calculator" target="_blank" class="project-link code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.507.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.338c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+        <p class="project-desc">A simple calculator web application built as my first project — clean, functional, and responsive.</p>
+        <div class="project-features">
+          <span class="feature-tag">➕ Addition</span>
+          <span class="feature-tag">➖ Subtraction</span>
+          <span class="feature-tag">✖️ Multiplication</span>
+          <span class="feature-tag">➗ Division</span>
+          <span class="feature-tag">✨ Clean UI</span>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="container">
     <div class="reveal">
